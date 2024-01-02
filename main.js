@@ -1,1 +1,1 @@
-console.log("hello");
+(()=>{"use strict";const e=function(){const e=document.createElement("div");e.setAttribute("class","mainDiv");const t=document.createElement("h1");return t.innerHTML="Animal I have become",e.appendChild(t),e},t=document.querySelector("#content"),n=document.querySelectorAll("ul li"),c=e();e().classList.add("active"),t.append(c),n.forEach((e=>e.addEventListener("click",(()=>{t.append(c)}))))})();
