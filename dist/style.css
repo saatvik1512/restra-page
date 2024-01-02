@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#content {
+    flex: 1;
+}
+
+.header {
+    display: grid;
+    background-color: green;
+    justify-content: center;
+}
+
+.header1 {
+    display: flex;
+    align-items: center;
+}
+
+
+.header1 h1 {
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 5rem;
+    margin: 0;
+    color: white;
+    position: relative;
+}
+
+.header1 h1::before{
+    content: "Lorem Ipsum";
+    position: absolute;
+    color: black;
+    top: 3px;
+    left: -3px;
+}
+
+.header2 ul {
+    display: flex;
+    padding: 0;
+}
+
+.header2 ul > * {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex: 1;
+    font-size: 2rem;
+    font-family: 'Amatic SC', sans-serif;
+}
+
+.header2 ul li:hover{
+    scale: 1.6;
+}
+
+.header2 ul li a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.active {
+    padding: 1rem;
+    border: 2px solid red;
+}
+
+footer {
+    display: flex;
+    padding: 0.5rem;
+    border-top: 1px solid rgb(209, 209, 209);
+    align-items: center;
+    justify-content: center;
+    font-size: 29px;
+    font-family: 'Amatic SC', sans-serif;
+    letter-spacing: 2px;
+    background: green;
+}
+
+footer img {
+    width: 30px;
+}
+
+footer a {
+text-decoration: none;
+color: var(--color-2);
+}
