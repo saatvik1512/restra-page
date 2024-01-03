@@ -1,11 +1,8 @@
-function Home(){
+export default function Home(){
     const mainDiv = document.createElement('div');
     mainDiv.setAttribute('class', 'mainDiv');
-    const firstElement = document.createElement('h1');
-    firstElement.innerHTML = 'Animal I have become';
-    mainDiv.appendChild(firstElement);
+    mainDiv.classList.add('active')
+    mainDiv.innerHTML = "<h1>This is page 1</h1>"
 
     return mainDiv;
 }
-
-export default Home;

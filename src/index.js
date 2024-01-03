@@ -1,14 +1,15 @@
 import Home from "./firstpage";
-import secondPage from "./secondPage";
+import Food from "./secondPage";
+import Contact from "./thirdPage";
 
 const mainContainer = document.querySelector('#content');
-const allLists = document.querySelectorAll('ul li');
-const funct = Home();
-Home().classList.add('active')
+const allLists = document.querySelectorAll('ul li a');
+const arr = [Home(), Food(), Contact()];
 
-mainContainer.append(funct)
-
+mainContainer.appendChild(Home());
 
 allLists.forEach(item => item.addEventListener('click', () => {
-    mainContainer.append(funct)
+    mainContainer.removeChild(document.querySelector('.mainDiv'));
+    mainContainer.appendChild(arr[item.dataset.number])
+    arr[item.dataset.number].classList.add('active')
 }))

@@ -1,11 +1,6 @@
-function Food(){
+export default function Food(){
     const mainDiv = document.createElement('div');
     mainDiv.setAttribute('class', 'mainDiv');
-    const firstElement = document.createElement('h1');
-    firstElement.innerHTML = 'food';
-    mainDiv.appendChild(firstElement);
-
+    mainDiv.innerHTML = "<h1>THis is page 2</h1>"
     return mainDiv;
 }
-
-export default Food;

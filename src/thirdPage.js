@@ -1,11 +1,7 @@
-function Contact(){
+export default function Contact(){
     const mainDiv = document.createElement('div');
     mainDiv.setAttribute('class', 'mainDiv');
-    const firstElement = document.createElement('h1');
-    firstElement.innerHTML = 'Contact';
-    mainDiv.appendChild(firstElement);
+    mainDiv.innerHTML = "<h1>THis is page 3</h1>"
 
     return mainDiv;
 }
-
-export default Contact;
