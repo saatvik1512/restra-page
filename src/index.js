@@ -8,8 +8,10 @@ const arr = [Home(), Food(), Contact()];
 
 mainContainer.appendChild(Home());
 
-allLists.forEach(item => item.addEventListener('click', () => {
+allLists.forEach(item => item.addEventListener('click', changingTab));
+
+function changingTab(){
     mainContainer.removeChild(document.querySelector('.mainDiv'));
-    mainContainer.appendChild(arr[item.dataset.number])
-    arr[item.dataset.number].classList.add('active')
-}))
+    arr[this.dataset.number].classList.add('active')
+    mainContainer.appendChild(arr[this.dataset.number])
+}
