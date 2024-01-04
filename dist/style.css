@@ -6,6 +6,7 @@ body {
 }
 
 #content {
+    display: flex;
     flex: 1;
 }
 
@@ -61,11 +62,26 @@ body {
 }
 
 .active {
+    flex: 1;
     font-family: 'Amatic SC', sans-serif;
     text-align: center;
     font-size: 1.5rem;
     padding: 1rem;
     border: 2px solid red;
+}
+
+.sub-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-container > p {
+    font-size: 2.1rem;
+    margin: 0.3rem;
+}
+
+.sub-container > h1 {
+    text-decoration: underline;
 }
 
 footer {
