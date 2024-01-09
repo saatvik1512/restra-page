@@ -41,6 +41,7 @@ body {
 .header2 ul {
     display: flex;
     padding: 0;
+    margin: 0;
 }
 
 .header2 ul > * {
@@ -69,7 +70,6 @@ body {
     align-items: center;
     flex: 1;
     font-family: 'Amatic SC', sans-serif;
-    text-align: center;
     font-size: 1.5rem;
 }
 
@@ -79,6 +79,7 @@ body {
     min-width: 580px;
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
 .sub-container > p {
@@ -91,32 +92,19 @@ body {
 }
 
 .first-container {
-    width: 50%;
-    min-width: 460px;
-    padding: 3rem;
-    border-radius: 20px;
-    background-color: green;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-}
-
-.first-container img {
-    border: 3px double;
-    height: 30vh;
-    width: 20vw;
-    border-radius: 50%;
-    align-self: center;
+    width: 70%;
 }
 
 .first-container h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 9vw;
+    margin: 0;
     color: white;
-    padding: 2rem;
+    transition: all 3s;
 }
 
-.first-container span {
-    padding: 1rem;
-    font-size: 4rem;
-    font-family: 'Abril Fatface', serif;
+.first-container h1:hover {
+    color: yellow;
 }
 
 .second-container {

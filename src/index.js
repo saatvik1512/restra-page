@@ -7,6 +7,8 @@ const allLists = document.querySelectorAll('ul li a');
 const arr = [Home(), Food(), Contact()];
 
 mainContainer.appendChild(Home());
+let words = document.querySelector('.first-container h1')
+words.innerHTML = 'hi'
 
 allLists.forEach(item => item.addEventListener('click', changingTab));
 
